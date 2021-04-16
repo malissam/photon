@@ -710,6 +710,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 6820178888878919722}
   - {fileID: 942696757990280782}
   - {fileID: 4964332089887795359}
   sceneViewId: 1
@@ -727,8 +728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a36b605158da9e49b47c1d9b76821f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
-  beams: {fileID: 1922860636}
 --- !u!114 &942696757990280782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,7 +772,7 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: Jump
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 1
     LayerIndex: 0
 --- !u!1 &3621725084967702959
 GameObject:

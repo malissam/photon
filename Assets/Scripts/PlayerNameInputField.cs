@@ -9,7 +9,7 @@ using Photon.Realtime;
 using System.Collections;
 
 
-namespace Com.MyCompany.MyGame
+namespace myTest
 {
     /// <summary>
     /// Player name input field. Let the user input his name, will appear above the player in the game.
@@ -36,7 +36,6 @@ namespace Com.MyCompany.MyGame
         void Start()
         {
 
-
             string defaultName = string.Empty;
             InputField _inputField = this.GetComponent<InputField>();
             if (_inputField != null)
@@ -58,7 +57,6 @@ namespace Com.MyCompany.MyGame
 
         #region Public Methods
 
-
         /// <summary>
         /// Sets the name of the player, and save it in the PlayerPrefs for future sessions.
         /// </summary>
@@ -76,7 +74,6 @@ namespace Com.MyCompany.MyGame
 
             PlayerPrefs.SetString(playerNamePrefKey, value);
         }
-
 
         #endregion
     }

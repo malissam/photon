@@ -195,7 +195,7 @@ namespace Photon.Pun.Demo.Asteroids
                 object isPlayerReady;
                 if (changedProps.TryGetValue(AsteroidsGame.PLAYER_READY, out isPlayerReady))
                 {
-                    entry.GetComponent<PlayerListEntry>().SetPlayerReady((bool) isPlayerReady);
+                    entry.GetComponent<PlayerListEntry>().SetPlayerReady((bool)isPlayerReady);
                 }
             }
 

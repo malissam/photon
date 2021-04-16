@@ -2,7 +2,7 @@
 using System.Collections;
 using Photon.Pun;
 
-namespace Com.MyCompany.MyGame
+namespace myTest
 {
     public class PlayerAnimatorManager : MonoBehaviourPun
     {
