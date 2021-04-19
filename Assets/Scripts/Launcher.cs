@@ -199,7 +199,7 @@ namespace myTest
         }
         public override void OnLeftRoom()
         {
-            MainPanel.SetActive(true);
+           
 
             foreach (GameObject entry in playerListEntries.Values)
             {
@@ -208,6 +208,7 @@ namespace myTest
 
             playerListEntries.Clear();
             playerListEntries = null;
+        //    MainPanel.SetActive(true);
         }
 
         public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -271,7 +272,6 @@ namespace myTest
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
-
             PhotonNetwork.LoadLevel("SampleScene");
         }
 

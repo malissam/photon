@@ -66,7 +66,7 @@ namespace myTest
 			} else {
 
 
-				if (SimpleCharacterControl.LocalPlayerInstance==null)
+				if (PlayerManager.LocalPlayerInstance==null)
 				{
 				    Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
 

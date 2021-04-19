@@ -10,7 +10,7 @@
 
 using UnityEngine;
 
-namespace Photon.Pun.Demo.PunBasics
+namespace myTest
 {
 	/// <summary>
 	/// Camera work. Follow a target
@@ -21,11 +21,11 @@ namespace Photon.Pun.Demo.PunBasics
 
 	    [Tooltip("The distance in the local x-z plane to the target")]
 	    [SerializeField]
-	    private float distance = 0f;
+	    private float distance = 7.0f;
 	    
 	    [Tooltip("The height we want the camera to be above the target")]
 	    [SerializeField]
-	    private float height = .01f;
+	    private float height = 3.0f;
 	    
 	    [Tooltip("Allow the camera to be offseted vertically from the target, for example giving more view of the sceneray and less ground.")]
 	    [SerializeField]
@@ -37,7 +37,7 @@ namespace Photon.Pun.Demo.PunBasics
 
 	    [Tooltip("The Smoothing for the camera to follow the target")]
 	    [SerializeField]
-	    private float smoothSpeed = 0.15f;
+	    private float smoothSpeed = 0.125f;
 
         // cached transform of the target
         Transform cameraTransform;

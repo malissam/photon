@@ -20,6 +20,8 @@ namespace myTest
     public class PlayerListEntry : MonoBehaviour
     {
         [Header("UI References")]
+
+        private Text _playerName;
         public Text PlayerNameText;
 
         public Image PlayerColorImage;

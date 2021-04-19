@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 11475786}
   - component: {fileID: 11493046}
   - component: {fileID: 11413184}
-  - component: {fileID: 11475118}
+  - component: {fileID: -8765861671143319807}
   m_Layer: 5
   m_Name: PlayerListEntry
   m_TagString: Untagged
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: 0
   m_LayoutPriority: 1
---- !u!114 &11475118
+--- !u!114 &-8765861671143319807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -658,7 +658,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 195212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b92420fa27b32d43a6a35af7781c5d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3279578750be744459fab518044b860b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerNameText: {fileID: 11470916}

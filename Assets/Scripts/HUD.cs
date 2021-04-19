@@ -36,8 +36,8 @@ namespace myTest
                 GameObject entry = Instantiate(PlayerOverviewEntryPrefab);
                 entry.transform.SetParent(gameObject.transform);
                 entry.transform.localScale = Vector3.one;
-                entry.GetComponent<Text>().color = AsteroidsGame.GetColor(p.GetPlayerNumber());
-                entry.GetComponent<Text>().text = string.Format("{0}\nScore: {1}\nLives: {2}", p.NickName, p.GetScore(), AsteroidsGame.PLAYER_MAX_LIVES);
+                entry.GetComponent<Text>().color =SampleGame.GetColor(p.GetPlayerNumber());
+                entry.GetComponent<Text>().text = string.Format("{0}\nScore: {1}\nLives: {2}", p.NickName, p.GetScore(), SampleGame.PLAYER_MAX_LIVES);
 
                 playerListEntries.Add(p.ActorNumber, entry);
             }
@@ -58,7 +58,7 @@ namespace myTest
             GameObject entry;
             if (playerListEntries.TryGetValue(targetPlayer.ActorNumber, out entry))
             {
-                entry.GetComponent<Text>().text = string.Format("{0}\nScore: {1}\nLives: {2}", targetPlayer.NickName, targetPlayer.GetScore(), targetPlayer.CustomProperties[AsteroidsGame.PLAYER_LIVES]);
+                entry.GetComponent<Text>().text = string.Format("{0}\nScore: {1}\nLives: {2}", targetPlayer.NickName, targetPlayer.GetScore(), targetPlayer.CustomProperties[SampleGame.PLAYER_LIVES]);
             }
         }
 

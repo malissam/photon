@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 702f66bc5af88ef498689c54a4b1efb8
-timeCreated: 1486974282
-licenseType: Store
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PlayerUiPrefab: {fileID: 2255283323273562683, guid: 2f17f566331aec4419b37c1960e5c98e,
+      type: 3}
+  - m_animator: {instanceID: 0}
+  - m_rigidBody: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

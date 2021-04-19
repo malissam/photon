@@ -6,9 +6,12 @@ using Photon.Pun;
 
 namespace myTest
 {
-    public class SimpleCharacterControl : MonoBehaviour, IInitializable
+    public class SimpleCharacterControl : MonoBehaviourPun, IInitializable
     {
-        private PhotonView photonView;
+        public static GameObject LocalPlayerInstance;
+        [SerializeField]
+        public GameObject PlayerUiPrefab;
+      //  private PhotonView photonView;
         public void Initialize(GameObject character)
         {
             m_animator = character.GetComponent<Animator>();
@@ -57,9 +60,9 @@ namespace myTest
 
         private void Awake()
         {
-            if (photonView.IsMine)
+            if (this.photonView.IsMine)
            {
-               SimpleCharacterControl.LocalPlayerInstance = this.gameObject;
+              SimpleCharacterControl.LocalPlayerInstance = this.gameObject;
            }
            // #Critical
            // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
@@ -126,6 +129,14 @@ namespace myTest
 
         private void Update()
         {
+            if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
+            {
+                return;
+            }
+            if (!m_animator)
+            {
+                return;
+            }
             if (!m_jumpInput && Input.GetKey(KeyCode.Space))
             {
                 m_jumpInput = true;
