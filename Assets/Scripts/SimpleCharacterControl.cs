@@ -55,6 +55,8 @@ namespace myTest
 
         private List<Collider> m_collisions = new List<Collider>();
 
+        public static GameObject LocalPlayerInstance { get; private set; }
+
         private void Awake()
         {
             if (photonView.IsMine)

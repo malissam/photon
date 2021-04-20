@@ -17,6 +17,8 @@ using ExitGames.Client.Photon;
 using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 using Photon.Pun;
+using Photon.Pun.Demo.Asteroids;
+
 namespace myTest
 {
     public class PlayerOverviewPanel : MonoBehaviourPunCallbacks
